@@ -1,17 +1,17 @@
 # Sorting Visualizer
 A visualization for various sorting algorithms like merge sort, heap sort, quick sort, insertion sort, bubble sort and selection sort.<br>
-Access it using this link https://csals.github.io/Sorting-Visualizer/.
+<!-- Access it using this link https://csals.github.io/Sorting-Visualizer/. -->
 ![](sorting_visualizer.gif)
 
-## To Be Implemented
-- Add a dropdown menu to all sort and submit button to sort.
+
+<!-- - Add a dropdown menu to all sort and submit button to sort.
 - Update NUMBER_OF_ARRAY_BARS every time window size is changed
 - Find a way to add hover background color to buttons in react (in restore functions)
 - Update with sorted array after visualization
 - Generalize disableSort,resetSort functions
 - Implement heap sort
-- Stop the algorithm when reset button is pressed
-- Huge thanks to [Clément Mihailescu](https://github.com/clementmihailescu) for this project idea.
+- Stop the algorithm when reset button is pressed -->
+
 
 ## 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -52,3 +52,6 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+
+- Huge thanks to [Clément Mihailescu](https://github.com/clementmihailescu) for this project idea.
