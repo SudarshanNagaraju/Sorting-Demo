@@ -1,16 +1,10 @@
 # Sorting Visualizer
 A visualization for various sorting algorithms like merge sort, quick sort, insertion sort, bubble sort and selection sort.<br>
-<!-- Access it using this link https://csals.github.io/Sorting-Visualizer/. -->
+# Click for Live Demo [sort-demo](https://sorting-illustration.herokuapp.com/)
 ![](sorting_visualizer.gif)
 
 
-<!-- - Add a dropdown menu to all sort and submit button to sort.
-- Update NUMBER_OF_ARRAY_BARS every time window size is changed
-- Find a way to add hover background color to buttons in react (in restore functions)
-- Update with sorted array after visualization
-- Generalize disableSort,resetSort functions
-- Implement heap sort
-- Stop the algorithm when reset button is pressed -->
+
 
 
 ## 
