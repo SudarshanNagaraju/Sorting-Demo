@@ -19,8 +19,8 @@ function reportWindowSize() {
 window.onresize = reportWindowSize; //TBD -> find a way to update state also when resized
 
 
-const PRIMARY_COLOR = 'blue'; //Normal color of bars
-const SECONDARY_COLOR = 'red'; //Color of bars when they are being compared
+const PRIMARY_COLOR = 'red'; //Normal color of bars
+const SECONDARY_COLOR = 'black'; //Color of bars when they are being compared
 const ANIMATION_SPEED_MS = 10; //Animation Speed (how fast color changes, how fast height gets overwritten)
 
 //Tooltips for buttons
@@ -68,11 +68,11 @@ class SortingVisualizer extends React.Component {
         buttonStyle.cursor = "default";
         buttonStyle.background = "#000000";
 
-        document.getElementById("heapSort").disabled = true;
-        buttonStyle = document.getElementById("heapSort").style;
-        document.getElementById("heapSort").title = DISABLED_BUTTON;
-        buttonStyle.cursor = "default";
-        buttonStyle.background = "#000000";
+        // document.getElementById("heapSort").disabled = true;
+        // buttonStyle = document.getElementById("heapSort").style;
+        // document.getElementById("heapSort").title = DISABLED_BUTTON;
+        // buttonStyle.cursor = "default";
+        // buttonStyle.background = "#000000";
 
         document.getElementById("selectionSort").disabled = true;
         buttonStyle = document.getElementById("selectionSort").style;
@@ -117,11 +117,11 @@ class SortingVisualizer extends React.Component {
         buttonStyle.background = "#47535E";
         buttonStyle.cursor = "pointer";
 
-        document.getElementById("heapSort").disabled = false;
-        buttonStyle = document.getElementById("heapSort").style;
-        document.getElementById("heapSort").title = ENABLED_BUTTON.nlogn;
-        buttonStyle.background = "#47535E";
-        buttonStyle.cursor = "pointer";
+        // document.getElementById("heapSort").disabled = false;
+        // buttonStyle = document.getElementById("heapSort").style;
+        // document.getElementById("heapSort").title = ENABLED_BUTTON.nlogn;
+        // buttonStyle.background = "#47535E";
+        // buttonStyle.cursor = "pointer";
     }
     //Sorting Algorithms
     mergeSort() {
@@ -294,27 +294,27 @@ class SortingVisualizer extends React.Component {
                 ))}
             </div>
             <div className="buttons" > 
-                <button title="Generates a new random array" style={{position:'relative',top:`${0*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.resetArray()}>
+                <button title="Generates a new random array" style={{position:'relative',top:`${0.5*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.resetArray()}>
                     Generate New Array
                 </button>
-                <button title="O(NlogN) Time Complexity" id = "mergeSort" style={{position:'relative',top:`${0.5*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.mergeSort()}>
+                <button title="O(NlogN) Time Complexity" id = "mergeSort" style={{position:'relative',top:`${1.25*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.mergeSort()}>
                     Merge Sort
                 </button>
-                <button title="O(N^2) Time Complexity" id = "quickSort" style={{position:'relative',top:`${1.5*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.quickSort()}>
+                <button title="O(N^2) Time Complexity" id = "quickSort" style={{position:'relative',top:`${2.1*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.quickSort()}>
                     Quick Sort
                 </button>
-                <button title="O(N^2) Time Complexity" id = "bubbleSort" style={{position:'relative',top:`${2.5*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.bubbleSort()}>
+                <button title="O(N^2) Time Complexity" id = "bubbleSort" style={{position:'relative',top:`${2.9*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.bubbleSort()}>
                     Bubble Sort
                 </button>
-                <button title="O(N^2) Time Complexity" id = "insertionSort" style={{position:'relative',top:`${3.5*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.insertionSort()}>
+                <button title="O(N^2) Time Complexity" id = "insertionSort" style={{position:'relative',top:`${3.8*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.insertionSort()}>
                     Insertion Sort
                 </button>
-                <button title="O(N^2) Time Complexity" id = "selectionSort" style={{position:'relative',top:`${5.5*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.selectionSort()}>
+                <button title="O(N^2) Time Complexity" id = "selectionSort" style={{position:'relative',top:`${4.8*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.selectionSort()}>
                     Selection Sort
                 </button>
-                <button title="O(NlogN) Time Complexity" id = "heapSort" style={{position:'relative',top:`${4.5*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.heapSort()}>
+                {/* <button title="O(NlogN) Time Complexity" id = "heapSort" style={{position:'relative',top:`${4.5*(WINDOW_HEIGHT-20)/TOTAL_BUTTONS}px`}} onClick={() => this.heapSort()}>
                     Heap Sort
-                </button>
+                </button> */}
                 
             </div>    
             </>
