@@ -1,6 +1,8 @@
 # Sorting Visualizer
 A visualization for various sorting algorithms like merge sort, quick sort, insertion sort, bubble sort and selection sort.<br>
-## Click link for Live App - [Sorting Demo](https://sorting-illustration.herokuapp.com/)
+## Click below link for Live App 
+[https://sorting-illustration.herokuapp.com/](https://sorting-illustration.herokuapp.com/)
+
 ## GIF Illustration
 ![](sorting_visualizer.gif)
 
